@@ -1,5 +1,8 @@
 {
-  "nama": "Reiluthfi Shidqi Wienarya",
-  "nim": "103022300112",
-  "fakultas": "Informatika"
+  "nama": {
+    "depan": "Reiluthfi",
+    "belakang": "Shidqi W"
+  },
+  "nim": 103022300029,
+  "fakultas": "informatika"
 }

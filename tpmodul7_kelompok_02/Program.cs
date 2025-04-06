@@ -1,9 +1,10 @@
-﻿class Program
+﻿using tpmodul7_kelompok_02;
+
+class Program
 {
     static void Main(string[] args)
     {
         DataMahasiswa103022300112.ReadJSON();
-        Console.WriteLine();
         KuliahMahasiswa103022300112.ReadJSON();
     }
 }

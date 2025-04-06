@@ -1,16 +1,28 @@
 {
-  "mataKuliah": [
+  "courses": [
     {
-      "kode": "CCK2LAB3",
-      "nama": "Kecerdasan Buatan"
+      "code": "CRI2C4",
+      "name": "Konstruksi Perangkat Lunak"
     },
     {
-      "kode": "CCK2FAB4",
-      "nama": "Arsitektur Dan Desain Perangkat Lunak"
+      "code": "CCK2HAB4",
+      "name": "Basis Data"
     },
     {
-      "kode": "CRI2C4",
-      "nama": "Konstruksi Perangkat Lunak"
+      "code": "CCK3IAB2",
+      "name": "Tata Tulis Ilmiah"
+    },
+    {
+      "code": "CCK2LAB3",
+      "name": "Kecerdasan Buatan"
+    },
+    {
+      "code": "CCK2JAC2",
+      "name": "Proyek Tingkat II"
+    },
+    {
+      "code": "CCK2FAB4",
+      "name": "Arsitektur Dan Desain Perangkat Lunak"
     }
   ]
 }

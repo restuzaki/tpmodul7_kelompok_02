@@ -1,18 +1,46 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
-public class DataMahasiswa103022300112
+namespace tpmodul7_kelompok_02
 {
-    public string nama { get; set; }
-    public string nim { get; set; }
-    public string fakultas { get; set; }
-
-    public static void ReadJSON()
+    public class Nama
     {
-        string json = File.ReadAllText(@"../../../tp7_1_103022300112.json");
-        var mhs = JsonConvert.DeserializeObject<DataMahasiswa103022300112>(json);
+        [JsonPropertyName("depan")]
+        public string Depan { get; set; }
 
-        Console.WriteLine($"Nama {mhs.nama} dengan nim {mhs.nim} dari fakultas {mhs.fakultas}");
+        [JsonPropertyName("belakang")]
+        public string Belakang { get; set; }
+    }
+
+    class DataMahasiswa103022300112
+    {
+        [JsonPropertyName("nama")]
+        public Nama Nama { get; set; }
+
+        [JsonPropertyName("nim")]
+        public long Nim { get; set; }
+
+        [JsonPropertyName("fakultas")]
+        public string Fakultas { get; set; }
+
+        public static void ReadJSON()
+        {
+            string path = "../../../tp7_1_103022300112.json";
+            string json = File.ReadAllText(path);
+
+
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
+            var data = JsonSerializer.Deserialize<DataMahasiswa103022300112>(json, options);
+
+
+            Console.WriteLine($"Nama {data.Nama.Depan} {data.Nama.Belakang} dengan nim {data.Nim} dari fakultas {data.Fakultas}");
+        }
     }
 }
