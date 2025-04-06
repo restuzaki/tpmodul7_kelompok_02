@@ -10,6 +10,10 @@ namespace tpmodul7_kelompok_02
         {
             DataMahasiswa103022330070 dataMhs = new DataMahasiswa103022330070();
             dataMhs.ReadJSON();
+            
+
+            KuliahMahasiswa103022330070 kuliah = new KuliahMahasiswa103022330070();            
+            kuliah.ReadJSON();
             Console.ReadKey();
         }
     }
