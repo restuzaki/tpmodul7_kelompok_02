@@ -1,0 +1,16 @@
+{
+  "mataKuliah": [
+    {
+      "kode": "CCK2LAB3",
+      "nama": "Kecerdasan Buatan"
+    },
+    {
+      "kode": "CCK2FAB4",
+      "nama": "Arsitektur Dan Desain Perangkat Lunak"
+    },
+    {
+      "kode": "CRI2C4",
+      "nama": "Konstruksi Perangkat Lunak"
+    }
+  ]
+}
