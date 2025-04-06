@@ -1,0 +1,16 @@
+﻿{
+    "mataKuliah": [
+        {
+            "kode": "CCK2IAB3",
+            "nama": "Dasar Jaringan Komputer"
+        },
+        {
+            "kode": "CCK2HAB4",
+            "nama": "Basis Data"
+        },
+        {
+            "kode": "CRI2C4",
+            "nama": "konstruksi Perangkat Lunak"
+        }
+    ]
+}
