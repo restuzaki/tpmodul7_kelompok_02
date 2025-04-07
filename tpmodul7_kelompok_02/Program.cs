@@ -6,5 +6,8 @@ class Program
     {
         DataMahasiswa103022300112.ReadJSON();
         KuliahMahasiswa103022300112.ReadJSON();
+
+        DataMahasiswa103022300029.ReadJSON();
+        KuliahMahasiswa103022300029.ReadJSON();
     }
 }
